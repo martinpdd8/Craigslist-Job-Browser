@@ -1,0 +1,48 @@
+<uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/refresh_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="top">
+	
+	<LinearLayout 
+	    android:id="@+id/home"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	    android:background="@color/background"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:paddingTop="5dp" >
+	
+	    <ProgressBar
+	       android:id="@+id/progressbar"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       style="?android:attr/progressBarStyle" />
+	      
+		<ListView
+		    android:visibility="gone"
+		    android:layout_gravity="top"
+		    android:gravity="top"
+		    android:clickable="false"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/list"
+		    android:orientation="vertical"
+		    android:divider="@android:color/transparent"
+	  		android:dividerHeight="5.0sp"/>
+	
+		<TextView 
+		    android:id="@+id/no_connection"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:gravity="center"
+		    android:visibility="gone"
+		    android:text="@string/not_connected_message" />
+	
+	</LinearLayout>
+	
+</uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
